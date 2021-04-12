@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 using ll=long long;
 const int maxn=100005;
 ll n,k,a[maxn];
