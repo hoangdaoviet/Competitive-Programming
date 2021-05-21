@@ -14,7 +14,7 @@ using vi = vector<int>;
 using vll = vector<long long>;
 #define all(x) x.begin(),x.end()
 #define sz(x) int(x.size())
-#define push push_back
+#define pb push_back
 #define pop pop_back()
 #define rsz resize
 
