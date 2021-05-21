@@ -24,7 +24,7 @@ using vl = vector<ll>;
 // use postfix increment/decrement operator for speed and better optimization
 // http://www.cs.technion.ac.il/users/yechiel/CS/FAQs/c++-faq/increment-pre-post-speed.html
 #define FOR(i,a,b) for (int i = (a); i <= (b); ++i) // Less than or equal?, should be less than
-#define ROF(i,a,b) for (int i = (a); i >= (b); --i) // Same here
+#define ROF(i,a,b) for (int i = (a); i >= (b); --i) // (a)-1?
 // No need to cast to int lol
 #define each(i,a) for(auto& i : a) // C++ 11 and after
 // You shoud add some spaces to enhance readability both for you and for others
