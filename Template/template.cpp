@@ -46,5 +46,5 @@ int main()
 	int n, m; 
 	cin >> n >> m; 
 	cout << n + m;
-    // Use TAB character instead of TAB indents (4-space indents) please!!!
+	// Use TAB character instead of TAB indents (4-space indents) please!!!
 }
