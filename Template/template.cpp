@@ -26,12 +26,12 @@ int main()
 {
 	cin.tie(0)->sync_with_stdio(0);
 	#ifdef DEBUG
-	freopen("input.txt","r",stdin);
-	freopen("output.txt","w",stdout);
+		freopen("input.txt","r",stdin);
+		freopen("output.txt","w",stdout);
 	#endif
 	#ifdef OFFLINE
-	freopen((name+".inp").c_str(),"r",stdin);
-	freopen((name+".out").c_str(),"w",stdout);
+		freopen((name+".inp").c_str(),"r",stdin);
+		freopen((name+".out").c_str(),"w",stdout);
 	#endif
 	int n, m; 
 	cin >> n >> m; 
