@@ -22,7 +22,7 @@ using vl = vector<ll>;
 
 //for loop
 // use postfix increment/decrement operator for speed and better optimization
-// https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiL5azM0NrwAhXOG6YKHby2DDYQFjABegQIBBAD&url=http%3A%2F%2Fwww.cs.technion.ac.il%2Fusers%2Fyechiel%2FCS%2FFAQs%2Fc%2B%2B-faq%2Fincrement-pre-post-speed.html%23%3A~%3Atext%3D%252B%252Bi%2520is%2520sometimes%2520faster%2Ccopy%2520of%2520the%2520this%2520object.&usg=AOvVaw3uQ_-U5slhkcn3ho6mrWRs
+// http://www.cs.technion.ac.il/users/yechiel/CS/FAQs/c++-faq/increment-pre-post-speed.html
 #define FOR(i,a,b) for (int i = (a); i <= (b); ++i) // Less than or equal?, should be less than
 #define ROF(i,a,b) for (int i = (a); i >= (b); --i) // Same here
 // No need to cast to int lol
