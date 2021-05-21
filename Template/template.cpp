@@ -16,7 +16,9 @@ using vl = vector<ll>;
 #define sz(x) int((x).size()) // must have the parentheses, here is the reason why https://stackoverflow.com/questions/22155634/using-parentheses-in-define-preprocessor-statements/22155766
 #define pb push_back
 //#define pop pop_back() don't define this, bad practice
-#define rsz resize
+
+//#define rsz resize
+// Resizes are rarely used, not necessary to define
 
 //for loop
 // use postfix increment/decrement operator for speed and better optimization
