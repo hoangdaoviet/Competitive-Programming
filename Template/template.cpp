@@ -33,7 +33,5 @@ int main()
 		freopen((name+".inp").c_str(),"r",stdin);
 		freopen((name+".out").c_str(),"w",stdout);
 	#endif
-	int n, m; 
-	cin >> n >> m; 
-	cout << n + m;
+	
 }
