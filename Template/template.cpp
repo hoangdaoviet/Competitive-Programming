@@ -5,22 +5,22 @@ using namespace std;
 using ll = long long;
 const long long INF = 1e18;
 const string yes = "YES\n", no = "NO\n";
-const string name="";
 #define endl '\n'
 
 //vector
 using vi = vector<int>;
 using vl = vector<ll>;
 #define all(x) begin(x), end(x)
+#define pb push_back
 #define sz(x) int((x).size())
-
-//for loop
-#define FOR(i,a,b) for (int i = (a); i < (b); ++i)
-#define ROF(i,a,b) for (int i = (a); i > (b); --i)
-#define each(i,a) for(auto& i : a) 
 
 //debug
 #define dbg(x) cerr << #x << ": " << x << '\n'; 
+
+//preprocess
+const string name="";
+//#define DEBUG
+//#define OFFLINE
 
 int main()
 {
