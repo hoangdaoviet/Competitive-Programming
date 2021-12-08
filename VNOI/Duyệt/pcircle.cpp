@@ -1,40 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define all(x) x.begin(),x.end()
-using ll=long long;
-using vi=vector <int>;
-int n,pos; vector <vi> ans; vi a,num; bool used[21];
-vi prime{2,3,5,7,11,13,17,19,23,29,31,37,41};
-void backtrack(int k)
+using ll = long long;
+using vi = vector<int>;
+int n,cnt;
+vi a;
+bool u[20];
+int snt[]={3,5,7,11,13,17,19,23,29,31,37,41};
+int res[]={0,1,2,2,4,96,1024,2880,81024,770144};
+
+void solve(int k)
 {
-    if (k > 1 && binary_search(all(prime), a[k-1]+a[k-2]) == false) return;
-    if (k == 2*n){
-        if (binary_search(all(prime), a.front()+a.back())){
-            if (pos < 10000) ans[pos] = a;
-            pos++;
+
+    if (k == n && binary_search(snt,snt+12,a[0] + a[k-1])){
+        cnt++;
+        if (cnt > 10000) return;
+        for (auto x : a){
+            cout << x << ' ';
         }
-        return;
+        cout << '\n';
     }
-    for (auto &i: num){
-        if (not used[i]){
-            a[k] = i; used[i] = true;
-            backtrack(k+1); used[i] = false;
+    for (int i=2; i<=n; ++i){
+        if (!u[i] && binary_search(snt,snt+12,a[k-1] + i)){
+            a[k] = i;
+            u[i] = true;
+            solve(k+1);
+            u[i] = false;
         }
     }
-    return;
 }
 
 int main()
 {
-    scanf("%d", &n);
-    a.resize(2*n); a[0]=1;
-    num.resize(2*n-1); iota(all(num),2);
-    ans.resize(10000);
-    backtrack(1);
-    printf("%d\n", pos);
-    for (int i=0; i<min(10000,pos); i++){
-        for (auto &res: ans[i]) printf("%d ", res);
-        printf("\n");
-    }
-    return 0;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    //freopen("input.txt","r",stdin);
+    //freopen("output.txt","w",stdout);
+    cin >> n; n *= 2;
+    a.resize(n);
+    cnt = 0;
+    a[0] = 1;
+    cout << res[n/2] << '\n';
+    solve(1);
 }
